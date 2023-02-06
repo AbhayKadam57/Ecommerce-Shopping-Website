@@ -1,12 +1,12 @@
-#Shopping E-commerce Website
+# Shopping E-commerce Website
 
 This repository contains a Shopping app built using React, React-redux toolkit, Firebase authentication, Razorpay.
 
-> [Live demo](https://rococo-pavlova-d8eaac.netlify.app/)
+> [Live demo]
 
 Or
 
-> https://rococo-pavlova-d8eaac.netlify.app/
+> 
 
 ---
 
