@@ -1,4 +1,4 @@
-#Shopping E-commerce Website
+# Shopping E-commerce Website
 
 This repository contains a Shopping app built using React, React-redux toolkit, Firebase authentication, Razorpay.
 
