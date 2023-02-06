@@ -2,11 +2,11 @@
 
 This repository contains a Shopping app built using React, React-redux toolkit, Firebase authentication, Razorpay.
 
-> [Live demo](https://rococo-pavlova-d8eaac.netlify.app/)
+> [Live demo](https://main--stately-starlight-fac4de.netlify.app/)
 
 Or
 
-> https://rococo-pavlova-d8eaac.netlify.app/
+> [https://main--stately-starlight-fac4de.netlify.app/]
 
 ---
 
