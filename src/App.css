@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-head {
+
+    /* height: 3em; */
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    background-color: blueviolet;
+    color: #fff;
+    /* position: absolute;
+    width: 100%;
+    left: 0; */
+    width: 100%;
+
+}
+
+.item {
+
+    flex: 1 1 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item:nth-child(1) {
+
+    justify-content: start;
+}
+
+.item:nth-child(3) {
+
+    justify-content: end;
+}
+
+.nav-link {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.home {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home h1 {
+
+    margin-left: 20px;
+}
+
+.products {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+
+    width: 23%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.product h4 {
+
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.image {
+
+    width: 80%;
+    height: 300px;
+}
+
+button {
+
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.cart {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.list {
+
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cart h2 {
+
+    margin-left: 20px;
+}
+
+.cart-table {
+
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-box {
+
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cart-summary {
+
+    flex: 5;
+    min-height: 400px;
+    background-color: rgb(208, 207, 207);
+    padding: 2em;
+}
+
+.cart-product {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+}
+
+.cart-img {
+
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Summary-row {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.divider {
+
+    height: 2px;
+    background-color: gray;
+}
+
+.item:nth-child(2) {
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.badge {
+
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(238, 15, 7);
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(182, 36, 36, 0.3), blueviolet), url("../public/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.login h1 {
+
+    color: white;
+    -webkit-text-stroke: 2px #0e58ba;
+    font-size: 4.4em;
+    font-weight: bold;
+}
+
+.login h2 {
+
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-login {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.logout {
+
+    background-color: blueviolet;
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0, 0.3);
+    margin-left: 20px;
+}
+
+.profile img {
+
+    width: 3em;
+    height: 3em;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+
+    .product {
+
+
+        width: 46%;
+    }
+
+
+
+    .list {
+
+        flex-direction: column;
+    }
+
+    .login h1 {
+
+        font-size: 3em;
+    }
+
+    .login h2 {
+
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width:426px) {
+
+
+
+    .product {
+
+
+        width: 92%;
+    }
+
+    .profile img {
+
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+    }
+
+    .nav-head h2 {
+
+        font-size: 1em;
+    }
+
+    .nav-head button {
+
+        font-size: 0.7em;
+        padding: 5px;
+        width: 60px;
+    }
+
+
+
+    .row-box {
+
+        font-size: 0.65em;
+    }
+
+    .row-box button {
+
+        font-size: 0.7em;
+    }
+
+    .Summary-row p {
+        font-size: 0.8em;
+    }
+
+    .Summary-row h3 {
+
+        font-size: 0.8em;
+    }
+
+}
