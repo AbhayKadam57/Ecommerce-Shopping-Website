@@ -1,4 +1,9 @@
+![LoginPage](https://user-images.githubusercontent.com/93931081/217845609-a15ca13a-60d3-4e02-bf4a-6a69baa1b918.jpg)
+
+
+
 <h3 align="center">Shopping E-commerce Website</h3>
+
 
 <p align="center">This repository contains a shopping app built using React, the React-redux toolkit, Firebase authentication, and Razorpay. It is an e-commerce website with a home page and a cart page where you can buy products and pay with Razorpay Gateaway.  </p>
 
@@ -13,6 +18,12 @@
 ## 🎈 Usage or Demo <a name="usage"></a>
 
 Please watch the following demo video for usage of the website:
+
+
+
+https://user-images.githubusercontent.com/93931081/217846699-844ad1f5-bbff-429a-947c-56f6e87a18c8.mp4
+
+
 
 ## 🧐 About <a name = "about"></a>
 
