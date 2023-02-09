@@ -1,35 +1,102 @@
-# Shopping E-commerce Website
+<h3 align="center">Shopping E-commerce Website</h3>
 
-This repository contains a Shopping app built using React, React-redux toolkit, Firebase authentication, Razorpay.
+<p align="center">This repository contains a shopping app built using React, the React-redux toolkit, Firebase authentication, and Razorpay. It is an e-commerce website with a home page and a cart page where you can buy products and pay with Razorpay Gateaway.  </p>
 
-> [Live demo](https://main--stately-starlight-fac4de.netlify.app/)
+## 📝 Table of Contents
 
-Or
+- [Usage](#usage)
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Built Using](#built_using)
+- [Authors](#authors)
 
-> [https://main--stately-starlight-fac4de.netlify.app/]
+## 🎈 Usage or Demo <a name="usage"></a>
 
----
+Please watch the following demo video for usage of the website:
 
-### Features
+## 🧐 About <a name = "about"></a>
 
-1. Login page with Gmail login with Firebase authentication.
-2. Home Section.
-3. Cart Section with Razorpay payment getaway(only test mode).
+The main idea is to create a minimal e-commerce website that can handle tasks such as loading product data from a third-party API and then showing it on the home page. Following that, we can add the products to the cart, from which we can remove them if we no longer require them. And finally, we can checkout or make a payment using the Razorpay payment gateway in test mode.
 
-### Instructions
+This project improved my understanding of the Redux toolkit, which is used for state management, as well as reduced my extra tasks, such as creating users, loading products, and working in the cart section.This project also provided me with the opportunity to work on Firebase authentication by integrating it with Gmail-based login.As the project progressed, the concept of react-routing became clearer.
 
-1. Clone the repo and run `npm install`.
-2. From the app folder run `npm start`.
-3. Use Your own Your web app's Firebase configuration for Firebase authentication.
-4. Use Your own Razorpay Id(Test mode or Live mode)
+The problem faced by me during the project is working with local storage, which has scope for improvement in this project. Other libraries can be used to help with the user persistence process.
 
-### Libraries and Tools used:
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-1. React (Used create-react-app for creating environment)
-2. Redux toolkit for State management.
-3. Firebase authentication for Login and create users.
-4. Razorpay payment gateway for payment Feature(Used In Test Mode).
-5. To get products Fake Store API [https://fakestoreapi.com/]
+### Installing
 
+Please follow the instructions below to run the application on your local machine.
 
-<img src="https://t.bkit.co/w_63e0e28758255.gif" />
+1. Clone the repo :
+
+```
+git clone https://github.com/AbhayKadam57/Ecommerce-Shopping-Website.git
+```
+
+2. Install the project's packages with the following commands:
+
+```
+npm install
+```
+
+3. Create an account with Firebase, start a new project in the console, and read the Firebase Doc(https://firebase.google.com/docs/web/setup?hl=en&authuser=0). The required configuration will be provided by Firebase, which you can add in the file ``firebase.js` path--> src/firebase.js.
+
+4. Create an `.env` file in root folder. and add all of the following firebase configuration ids and keys to the.env file with their respective keys and values.
+
+```javascript
+REACT_APP_FIREBASE_ID = "Your firebase id";
+
+REACT_APP_FIREBASE_AUTH_DOMAIN = "Your firebase auth Domain";
+
+REACT_APP_FIREBASE_PROJECT_ID = "Your firebae project id";
+
+REACT_APP_STORAGE_BUCKET = "Your storage bucket";
+
+REACT_APP_MESSAGE_ID = "Your messaging sender id";
+
+REACT_APP_APP_ID = "Your app Id";
+```
+
+then modify your configuration `firebase.js` as follows:
+
+```javascript
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_ID,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_ID,
+  appId: process.env.REACT_APP_APP_ID,
+};
+```
+
+4. Create an Razorpay account and consult Docs [Razorpay](https://razorpay.com/docs/#home-payments) for payment gateway integration. Razorpay will provide you with a unique ID, which you can use in the filename "cart.js."Add the razorpay Id to the '.env' file as follows:
+
+```javascript
+REACT_APP_RAZORPAY_ID = "Your Razorpay Id";
+```
+
+and replace the key in `cart.js`
+
+```javascript
+key: process.env.REACT_APP_RAZORPAY_ID;
+```
+
+5. Finally, to run the project, use the following command:
+
+```
+    npm start
+```
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [ReactJs](https://beta.reactjs.org/) - JavaScript Library
+- [FakeStoreAPI](https://fakestoreapi.com/) - API for Product details.
+- [Firebase](https://console.firebase.google.com/) - Use authentication
+- [Razorpay](https://razorpay.com/) - Payment Gateway
+- [React-razorpay](https://www.npmjs.com/package/react-razorpay)- Payment gateway Library
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@AbhayKadam57](https://github.com/AbhayKadam57) - Idea & Initial work
