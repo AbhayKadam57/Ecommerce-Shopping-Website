@@ -87,7 +87,9 @@ and replace the key in `cart.js`
 key: process.env.REACT_APP_RAZORPAY_ID;
 ```
 
-5. Finally, to run the project, use the following command:
+5. Don't forget to add `.env` in `.gitignore`
+
+6. Finally, to run the project, use the following command:
 
 ```
     npm start
